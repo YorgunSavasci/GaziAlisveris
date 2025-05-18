@@ -1,1 +1,44 @@
+INSERT INTO users (name, email, password)
+VALUES 
+('Ayşe Yılmaz', 'ayse.yilmaz@gmail.com', 'ayse*2025'),
+('Ahmet Şimşek', 'ahmet.simsek@outlook.com', 'ahmet123*'),
+('Zeynep Arslan', 'zeynepars@hotmail.com', 'zey!456'),
+('Mehmet Toprak', 'mehmet.toprak@gmail.com', 'mehmet78!'),
+('Elif Demir', 'elif_dmr@outlook.com', 'elif@2024'),
+('Kerem Yıldız', 'keremyildiz@hotmail.com', 'keryilz#1'),
+('Fatma Aydın', 'fatma.aydin@gmail.com', 'fatAy2025'),
+('Canan Kılıç', 'canan.kilic@outlook.com', 'c@nkilic45'),
+('Yusuf Karaca', 'yusuf_kr@gmail.com', 'yusuf_987'),
+('Derya Bal', 'derya.bal@hotmail.com', 'derya*bl2025');
 
+
+INSERT INTO products (name, category, price, image) VALUES
+('AWP Skin', 'CS:GO', 150.00, 'images/awp_skin.jpg'),
+('Karambit Skin', 'CS:GO', 180.00, 'images/karambit_skin.jpg'),
+('AK-47 Skin', 'CS:GO', 40.00, 'images/ak47_skin.jpg'),
+('Desert Eagle Skin', 'CS:GO', 18.00, 'images/desert_eagle_skin.jpg'),
+('Key', 'CS:GO', 2.90, 'images/key.jpg'),
+('Case', 'CS:GO', 3.90, 'images/case.jpg'),
+('Akali Skin', 'League of Legends', 15.90, 'images/akali_skin.jpg'),
+('Lee Sin Skin', 'League of Legends', 10.90, 'images/lee_sin_skin.jpg'),
+('Garen Skin', 'League of Legends', 20.90, 'images/garen_skin.jpg'),
+('Kayn Skin', 'League of Legends', 17.90, 'images/kayn_skin.jpg'),
+('Hextech Key', 'League of Legends', 0.90, 'images/hextech_key.jpg'),
+('Hextech Chest', 'League of Legends', 1.90, 'images/hextech_chest.jpg'),
+('Phantom Skin', 'Valorant', 24.90, 'images/phantom_skin.jpg'),
+('Vandal Skin', 'Valorant', 29.90, 'images/vandal_skin.jpg'),
+('Knife Skin', 'Valorant', 35.90, 'images/knife_skin.jpg'),
+('Operator Skin', 'Valorant', 29.90, 'images/operator_skin.jpg'),
+('Ghost Skin', 'Valorant', 19.90, 'images/ghost_skin.jpg'),
+('Spider Man Skin', 'Fortnite', 39.90, 'images/spider_man_skin.jpg'),
+('Weapon Skin', 'Fortnite', 14.90, 'images/weapon_skin.jpg'),
+('Axe Skin', 'Fortnite', 19.90, 'images/axe_skin.jpg');
+
+
+SELECT * FROM gaz_item_satis.users;
+INSERT INTO orders (u_id, p_id, o_quantity, o_date) VALUES
+(1, 1, 1, NOW()),
+(3, 4, 2, NOW()),
+(5, 8, 1, NOW()),
+(7, 11, 1, NOW()),
+(2, 2, 1, NOW());
