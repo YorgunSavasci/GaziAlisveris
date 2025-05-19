@@ -7,14 +7,13 @@ import com.gazialisveris.model.Cart;
 import com.gazialisveris.model.Product;
 
 public class ProductDao {
-	private Connection con;
-
-	private String query;
-    private PreparedStatement pst;
-    private ResultSet rs;
+private Connection con;
+private String query;
+private PreparedStatement pst;
+private ResultSet rs;
     
 
-	public ProductDao(Connection con) {
+public ProductDao(Connection con) {
 		super();
 		this.con = con;
 	}
@@ -47,7 +46,7 @@ public class ProductDao {
     }
 	
 	
-	 public Product getSingleProduct(int id) {
+ public Product getSingleProduct(int id) {
 		 Product row = null;
 	        try {
 	            query = "select * from products where id=? ";
@@ -72,7 +71,7 @@ public class ProductDao {
 	        return row;
 	    }
 	
-	public double getTotalCartPrice(ArrayList<Cart> cartList) {
+public double getTotalCartPrice(ArrayList<Cart> cartList) {
         double sum = 0;
         try {
             if (cartList.size() > 0) {
@@ -96,7 +95,7 @@ public class ProductDao {
     }
 
     
-    public List<Cart> getCartProducts(ArrayList<Cart> cartList) {
+public List<Cart> getCartProducts(ArrayList<Cart> cartList) {
         List<Cart> products = new ArrayList<>();
         try {
             if (cartList.size() > 0) {
