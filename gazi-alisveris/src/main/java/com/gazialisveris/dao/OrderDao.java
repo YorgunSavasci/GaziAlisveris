@@ -10,15 +10,13 @@ import com.gazialisveris.model.*;
 
 public class OrderDao {
 	
-	private Connection con;
-
-	private String query;
-    private PreparedStatement pst;
-    private ResultSet rs;
+private Connection con;
+private String query;
+private PreparedStatement pst;
+private ResultSet rs;
     
     
-
-	public OrderDao(Connection con) {
+public OrderDao(Connection con) {
 		super();
 		this.con = con;
 	}
@@ -41,7 +39,7 @@ public class OrderDao {
     }
 	
 
-    public List<Order> userOrders(int id) {
+public List<Order> userOrders(int id) {
         List<Order> list = new ArrayList<>();
         try {
             query = "select * from orders where u_id=? order by orders.o_id desc";
@@ -69,18 +67,17 @@ public class OrderDao {
         return list;
     }
 
-    public void cancelOrder(int id) {
-        //boolean result = false;
+public void cancelOrder(int id) {
+        
         try {
             query = "delete from orders where o_id=?";
             pst = this.con.prepareStatement(query);
             pst.setInt(1, id);
             pst.execute();
-            //result = true;
+            
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.print(e.getMessage());
-        }
-        //return result;
+        } 
     }
 }
