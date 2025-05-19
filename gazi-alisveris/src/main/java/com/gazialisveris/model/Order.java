@@ -23,7 +23,7 @@ public class Order extends Product{
 		this.qunatity = qunatity;
 		this.date = date;
 	}
-
+//getter and setter
 	public int getOrderId() {
 		return orderId;
 	}
