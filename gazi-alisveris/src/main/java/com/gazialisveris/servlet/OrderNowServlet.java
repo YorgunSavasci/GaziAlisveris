@@ -24,7 +24,7 @@ public class OrderNowServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
+            SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");//yön degisti de sqlde hala tam tersi.Kalsin boyle
             Date date = new Date();
 
             User auth = (User) request.getSession().getAttribute("auth");
