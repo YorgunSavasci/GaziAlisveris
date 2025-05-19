@@ -1,13 +1,11 @@
 package com.gazialisveris.model;
 
 public class Cart extends Product{
-	private int quantity;
+private int quantity;
 	
 	public Cart() {
 	}
-
-
-	public int getQuantity() {
+        public int getQuantity() {
 		return quantity;
 	}
 
