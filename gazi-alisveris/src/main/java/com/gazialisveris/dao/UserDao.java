@@ -4,13 +4,13 @@ import java.sql.*;
 import com.gazialisveris.model.*;
 
 public class UserDao {
-	private Connection con;
 
-	private String query;
-    private PreparedStatement pst;
-    private ResultSet rs;
+private Connection con;
+private String query;
+private PreparedStatement pst;
+private ResultSet rs;
 
-	public UserDao(Connection con) {
+public UserDao(Connection con) {
 		this.con = con;
 	}
 	
